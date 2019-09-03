@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Максим Чаус](https://up.htmlacademy.ru/htmlcss/26/user/837717).
-* Наставник: `Неизвестно`.
+* Наставник: [Кирилл Петров] (https://htmlacademy.ru/profile/frozik).
 
 ---
 
