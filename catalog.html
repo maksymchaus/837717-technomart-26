@@ -94,37 +94,55 @@
       </ul>
       <h1>Перфораторы</h1>
       <aside class="sidebar">
-        <h2>Производители</h2>
-        <ul class="producers">
-          <li>
-            <input type="checkbox">Bosch
-          </li>
-          <li>
-            <input type="checkbox">Интерскол
-          </li>
-          <li>
-            <input type="checkbox">Makita
-          </li>
-          <li>
-            <input type="checkbox">Dewalt
-          </li>
-          <li>
-            <input type="checkbox">Hitachi
-          </li>
-        </ul>
-        <ul class="supply">
-          <li>
-            <input type="radio" name="supply-type" value="battery">Аккумуляторные
-          </li>
-          <li>
-            <input type="radio" name="supply-type" value="network">Сетевые
-          </li>
-        </ul>
-        <input type="submit" value="Показать" class="aside-button">
+
+        <div class="sidebar-prices">
+          <span>ФИЛЬТР:</span>
+          <h2>Цена:</h2>
+          <div class="prices-label">0 - 30000 руб.</div>
+          <input type="hidden" id="min-price" name="min_price" value="0">
+          <input type="hidden" id="max-price" name="max_price" value="30000">
+        </div>
+        <div class="sidebar-producers">
+          <h2>Производители</h2>
+          <ul class="producers">
+            <li>
+              <input type="checkbox">Bosch
+            </li>
+            <li>
+              <input type="checkbox">Интерскол
+            </li>
+            <li>
+              <input type="checkbox">Makita
+            </li>
+            <li>
+              <input type="checkbox">Dewalt
+            </li>
+            <li>
+              <input type="checkbox">Hitachi
+            </li>
+          </ul>
+          <ul class="supply">
+            <li>
+              <input type="radio" name="supply-type" value="battery">Аккумуляторные
+            </li>
+            <li>
+              <input type="radio" name="supply-type" value="network">Сетевые
+            </li>
+          </ul>
+          <input type="submit" value="Показать" class="aside-button">
+        </div>
       </aside>
-      <ul class="main-cards">
+      <div class="sorting">
+        <span>Сортировка</span>
+        <ul class="sorting-bar"><!--???????????-->
+          <li>По цене</li>
+          <li>По типу</li>
+          <li>По функционалу</li>
+        </ul>
+      </div>
+      <ul class="catalog-cards">
         <li class="card-item">
-          <img src="BOSCHBFG3000.jpg" alt="BOSCHBFG3000">
+          <img src="BOSCHBFG3000.jpg" alt="перфоратор BOSCHBFG3000">
           <div class="card-action">
             <a href="#" class="buy-button">
               <img src="basket.svg" alt="корзина">Купить
@@ -263,12 +281,36 @@
             <h3>
               <a href="#">Перфоратор BOSCH BFG2000</a>
             </h3>
-              <span class="old-price"></span>
-              <span class="button-price">12500 P.</span>
+            <span class="old-price"></span>
+            <span class="button-price">12500 P.</span>
           </div>
         </li>
        </ul>
-   </main>
+       <nav class="pages-navigation">
+         <ul class="pages-navigation-list">
+           <li>
+             <a href="#">1</a>
+           </li>
+           <li>
+             <a href="#">2</a>
+           </li>
+           <li>
+             <a href="#">3</a>
+           </li>
+           <li class="next-page">
+             <a href="#">СЛЕДУЮЩАЯ</a>
+           </li>
+         </ul>
+       </nav>
+       <section class="general-info">
+         <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+         <p>
+           Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.В
+           ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+          </p>
+       </section>
+     </main>
 
    <footer class="main-footer">
      <div class="top-footer">
