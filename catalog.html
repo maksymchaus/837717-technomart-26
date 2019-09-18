@@ -103,10 +103,15 @@
       <h1>Перфораторы</h1>
       <aside>
         <h2>Фильтр</h2>
-        <form action="https://echo.htmlacademy.ru">
+        <form action="https://echo.htmlacademy.ru" oninput="priceoutput.value=pricecount.value">
           <fieldset>
             <legend>Цена</legend>
-            слайдер
+              <label>
+                <input type="range" min="0" max="30000" step="1000" id="pricecount">
+            </label>
+            <output>0</output>
+            <span>-</span>
+            <output name="priceoutput"></output>
           </fieldset>
           <fieldset>
              <legend>Производители</legend>
