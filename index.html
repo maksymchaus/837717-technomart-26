@@ -101,27 +101,27 @@
       </section>
 
       <div class="slider">
-          <input type="radio" id="btn-1" name="toggle" checked>
-          <input type="radio" id="btn-2" name="toggle">
-          <div class="slider-controls">
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <div class="slider-controls">
+          <label for="btn-1" class="visually-hidden"></label>
+          <label for="btn-2" class="visually-hidden"></label>
+        </div>
+        <div class="slides">
+          <div class="slide">
+            <h3>Дрели</h3>
+            <span>Cоседям на радость!</span>
+            <a class="button" href="#">Открыть каталог</a>
+            <img src="img/content/slider-1.jpg" width="620" height="265" alt="строитель">
           </div>
-          <div class="slides">
-            <div class="slide">
-              <h3>Дрели</h3>
-              <span>Cоседям на радость!</span>
-              <a class="button" href="#">Открыть каталог</a>
-              <img src="img/content/slider-1.jpg" width="620" height="265" alt="строитель">
-            </div>
-            <div class="slide">
-              <h3>Перфораторы</h3>
-              <span>Настоящие мужские игрушки</span>
-              <a class="button" href="catalog.html">Открыть каталог</a>
-              <img src="img/content/slider-2.jpg"  width="620" height="265" alt="строитель">
-            </div>
+          <div class="slide">
+            <h3>Перфораторы</h3>
+            <span>Настоящие мужские игрушки</span>
+            <a class="button" href="catalog.html">Открыть каталог</a>
+            <img src="img/content/slider-2.jpg"  width="620" height="265" alt="строитель">
           </div>
         </div>
+      </div>
 
       <div class="sale">
         <h3>Скидки 50%</h3>
@@ -368,18 +368,18 @@
         </p>
         <ul class="footer-social">
           <li>
-            <a class="social-button" href="#">
-              <img src="img/decorative/icon-vk.svg" alt="vk">
+            <a class="social-button" href="https://vk.com">
+              <img src="img/decorative/icon-vk.svg" alt="вконтакте">
             </a>
           </li>
           <li>
-            <a class="social-button" href="#">
-              <img src="img/decorative/icon-fb.svg" alt="fb">
+            <a class="social-button" href="https://www.facebook.com">
+              <img src="img/decorative/icon-fb.svg" alt="фейсбук">
             </a>
           </li>
           <li>
-            <a class="social-button" href="#">
-              <img src="img/decorative/icon-insta.svg" alt="instagram">
+            <a class="social-button" href="https://www.instagram.com">
+              <img src="img/decorative/icon-insta.svg" alt="инстаграм">
             </a>
           </li>
         </ul>
@@ -393,32 +393,30 @@
         </div>
       </div>
     </footer>
-
     <section class="modal-window">
-        <h2 class="visually-hidden">Регистрация</h2>
-        <form action="https://echo.htmlacademy.ru" method="POST">
-          <p>
-            <label>
-              Ваше имя:<input type="text" name="name" placeholder="Имя Фамилия">
-            </label>
-          </p>
-          <p>
-            <label>
-              Ваш e-mail:<input type="email" name="email" placeholder="email@example.com">
-            </label>
-          </p>
-          <p>
-            <label>
-              Текст письма:<textarea name="comment" placeholder="В свободной форме"></textarea>
-            </label>
-          </p>
-          <button class="button" type="submit">Отправить</button>
-        </form>
-        <button type="button" class="modal-close">
-          <img src="img/decorative/icon-close.svg" alt="крестик">
-        </button>
-      </section>
-
+      <h2 class="visually-hidden">Регистрация</h2>
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <p>
+          <label>
+            Ваше имя:<input type="text" name="name" placeholder="Имя Фамилия">
+          </label>
+        </p>
+        <p>
+          <label>
+            Ваш e-mail:<input type="email" name="email" placeholder="email@example.com">
+          </label>
+        </p>
+        <p>
+          <label>
+            Текст письма:<textarea name="comment" placeholder="В свободной форме"></textarea>
+          </label>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button type="button" class="modal-close">
+        <img src="img/decorative/icon-close.svg" alt="крестик">
+      </button>
+    </section>
   </body>
 </html>
 
