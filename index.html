@@ -3,39 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <div class="main-menu">
-        <a class="button">
-          <img src="img/content/logo-technomart.svg" alt="лого Техномарт">
-        </a>
-        <div class="search">
-          <label>
-            <img src="img/decorative/icon-search.svg" alt="лупа">
-            <span>Поиск</span>
-            <input type="search">
-          </label>
+        <div class="top-menu">
+          <a class="logo-button">
+            <img src="img/content/logo-technomart.svg" alt="лого Техномарт">
+          </a>
+          <div class="search">
+            <label>
+              <img src="img/decorative/icon-search.svg" alt="лупа">
+              <input type="search" value="Поиск:" >
+            </label>
+          </div>
+          <a href="#" class="bookmark">
+            <img src="img/decorative/icon-bookmark.svg" alt="закладка">
+            Закладки
+          </a>
+          <a href="#" class="busket">
+            <img src="img/decorative/icon-cart.svg" alt="корзина">
+            Корзина
+          </a>
+          <a class="buy-button" href="#">
+            Оформить заказ
+          </a>
         </div>
-        <a href="#">
-          <img src="img/decorative/icon-bookmark.svg" alt="закладка">
-          Закладки
-        </a>
-        <a href="#">
-          <img src="img/decorative/icon-cart.svg" alt="корзина">
-          Корзина
-        </a>
-        <a class="order-link" href="#">
-          Оформить заказ
-        </a>
         <div class="bottom-menu">
-          <p>
+          <p class="about">
           Интернет-магазин
           строительных материалов
           и инструментов для ремонта
           </p>
           <p>
-            <a href="phone">
+            <a href="#" class="phone">
               <img src="img/decorative/icon-phone.svg" alt="телефон">
               +7(812)555-05-55
             </a>
@@ -137,9 +141,12 @@
         <a href="#" class="catalog-button">Бесплатно</a>
         <img src="img/decorative/icon-5.svg" alt="авто доставки">
       </div>
+
       <section class="popular-goods">
-        <h2>популярные товары</h2>
-        <a href="#" class="button">все популярные товары</a>
+        <div class="header-goods">
+          <h2>популярные товары:</h2>
+          <a href="#" class="button">все популярные товары</a>
+        </div>
         <ul class="catalog-cards">
           <li class="card-item">
             <img src="img/content/bosch-9000.jpg" alt="перфоратор bosch-bfg-9000">
@@ -156,6 +163,12 @@
           </li>
           <li class="card-item">
             <img src="img/content/bosch-3000.jpg" alt="перфоратор bosch-bfg-3000">
+            <div class="card-action">
+              <a href="#" class="buy-button">
+                <img src="img/decorative/icon-cart.svg" alt="корзина">Купить
+              </a>
+              <a href="#" class="add-bookmark-button">В закладки</a>
+            </div>
             <div class="card-list">
               <h3>
                 <a href="#">Перфоратор BOSCH BFG3000</a>
@@ -169,6 +182,12 @@
           </li>
           <li class="card-item">
             <img src="img/content/bosch-6000.jpg" alt="перфоратор bosch-bfg-6000">
+            <div class="card-action">
+              <a href="#" class="buy-button">
+                <img src="img/decorative/icon-cart.svg" alt="корзина">Купить
+              </a>
+              <a href="#" class="add-bookmark-button">В закладки</a>
+            </div>
             <div class="card-list">
               <h3>
                 <a href="#">Перфоратор BOSCH BFG6000</a>
@@ -182,6 +201,12 @@
           </li>
           <li class="card-item">
             <img src="img/content/bosch-2000.jpg" alt="перфоратор bosch-bfg-2000">
+            <div class="card-action">
+              <a href="#" class="buy-button">
+                <img src="img/decorative/icon-cart.svg" alt="корзина">Купить
+              </a>
+              <a href="#" class="add-bookmark-button">В закладки</a>
+            </div>
             <div class="card-list">
               <h3>
                 <a href="#">Перфоратор BOSCH BFG2000</a>
@@ -293,13 +318,17 @@
       <section class="company-info">
         <h2>Компания &#171;техномарт&#187;</h2>
         <ul class="features">
-          <li>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
-          строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</li>
-          <li>Мы можем доставить ваш товар в самые отдаленные точки России!
-          Техномарт работает со многими транспортными компаниями:</li>
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
+          <li><p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
+          строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p></li>
+          <li><p>Мы можем доставить ваш товар в самые отдаленные точки России!
+          Техномарт работает со многими транспортными компаниями:</p></li>
+          <li>
+            <ul>
+              <li>Деловые линии</li>
+              <li>Автотрейдинг</li>
+              <li>ЖелДорЭкспедиция</li>
+            </ul>
+          </li>
         </ul>
         <a class="button" href="#">Подробнее о компании</a>
       </section>
@@ -323,11 +352,11 @@
 
     <footer class="main-footer">
       <div class="top-footer">
-        <a class="button">
+        <a class="logo-button">
           <img src="img/content/logo-technomart.svg" alt="лого Техномарт">
         </a>
         <nav class="main-navigation">
-          <ul class="site-navigation">
+          <ul class="footer-navigation">
             <li>
               <a href="#">Компания</a>
             </li>
@@ -349,7 +378,7 @@
            +7(812)555-05-55
         </p>
         <nav class="main-navigation">
-          <ul class="footer-navigation">
+          <ul class="footer-navigation-bottom">
             <li>
               <a href="#">Материалы</a>
             </li>
@@ -388,17 +417,18 @@
           </li>
         </ul>
         <div class="footer-conection">
-          <p>Обратная связь
+          <p>Обратная связь:
             <a href="mail.ru">mail@htmlacademy.ru</a>
           </p>
-          <p>Разработано
+          <p>Разработано -
             <a href="htmlacademy.ru">htmlacademy.ru</a>
           </p>
         </div>
       </div>
     </footer>
-    <section class="modal-window">
-      <h2 class="visually-hidden">Регистрация</h2>
+
+    <section class="modal-window visually-hidden">
+      <h2>class="visually-hidden">Регистрация</h2>
       <form action="https://echo.htmlacademy.ru" method="POST">
         <p>
           <label>
