@@ -13,6 +13,7 @@ body {
 a {
   text-decoration: none;
   color: #ffffff;
+  display: inline-block;
 }
 
 .site-navigation {
@@ -22,7 +23,7 @@ a {
   background-color: #32425c;
 }
 
-ul {
+.list-style {
   list-style: none;
 }
 
@@ -36,22 +37,31 @@ ul {
 }
 
 .visually-hidden{
-  display: none;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 }
 
 /*header*/
+
 header {
   background-color: #f3f7f9;
 }
+
 .top-menu {
   background-color: #293449;
   font-size: 17px;
 }
-.search input{
+
+.search input {
   background-color: #293449;
   color: #ffffff;
   border: none;
 }
+
 .logo-button {
   background-color: #ee3643;
   border-bottom: 2px solid #b52933;
@@ -62,16 +72,23 @@ header {
   border-bottom: 2px solid #9a212a;
 }
 
-.login-link a,
-.registration-link a {
-font-size: 21px;
-color: #000000;
-background-color: #ffffff;
+.logo-button:active {
+  background-color: #ba2732;
+  border-bottom: 2px solid #8e1e26;
 }
 
-.login-link a:hover,
-.registration-link a:hover {
+.login-link a {
+  font-size: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.login-link a:hover {
   color: #ee3643;
+}
+
+.login-link a:active {
+  color: #e7e7e7;
 }
 
 .about {
@@ -79,6 +96,7 @@ background-color: #ffffff;
   font-size: 16px;
   font-style: italic;
 }
+
 .phone {
 border: solid 2px #ffffff;
 color: #ee3643;
@@ -87,24 +105,32 @@ font-size: 21px;
 
 
 /*block main*/
-.goods ul li:nth-child(1) {
+
+.red {
+  background-color: #ee3643;
+}
+
+.yellow {
   background-color: #ffbf47;
 }
-.goods ul li:nth-child(2) {
+
+.blue {
   background-color: #3bbce3;
   }
-.goods ul li:nth-child(3) {
+
+.pink {
   background-color: #dc91d8;
   }
-.sale {
+
+.violet {
   background-color: #dc91d8;
   }
-.delivery-block {
+
+.golden {
   background-color: #ffc047;
 }
-.goods h3,
-.sale h3,
-.delivery-block h3 {
+
+.goods-category h3 {
   font-size: 24px;
   color: #ffffff;
 }
@@ -117,6 +143,7 @@ font-size: 21px;
 .catalog-button:focus {
   background-color: #cccccc;
   }
+
 .button {
   color:#ffffff;
   background-color: #ee3643;
@@ -133,32 +160,41 @@ font-size: 21px;
   color: #ffffff;
   text-transform: uppercase;
 }
+
 .slide span {
   font-size: 18px;
   color: #ffffff;
 }
+
 .header-goods{
   background-color: #f9f5f0;
 }
+
 h2{
   font-size: 30px;
   text-transform: uppercase;
   font-weight: 400;
 }
+
 .card-list a{
   color: #000000;
   font-family: 'PT Sans', sans-serif;
   font-size: 18px;
 }
+
 .old-price {
   color:#a9a9a9;
   font-size: 17px;
   text-decoration: line-through;
 }
+
 .button-price {
+  display: block;
   color: #ffffff;
   font-size: 17px;
-  background-color:#ee3643;
+  background-image: url("../img/decorative/red-button.svg");
+  background-repeat: no-repeat;
+  min-height: 38px;
 }
 
 .buy-button {
@@ -170,7 +206,10 @@ h2{
 .buy-button:hover,
 .buy-button:focus {
   background-color: #5fbb2d;
-  border-bottom: 2px solid #367315;
+}
+
+.buy-button:active {
+  background-color: #518534;
 }
 
 .add-bookmark-button {
@@ -182,6 +221,11 @@ h2{
 .add-bookmark-button:hover,
 .add-bookmark-button:focus {
   border: 2px solid #32425c;
+}
+
+.add-bookmark-button:active {
+  border: 2px solid #c1c6ce;
+  color: #d0d2d6;
 }
 
 .producers-header {
@@ -214,6 +258,7 @@ h2{
 }
 
 /*footer*/
+
 .top-footer{
   background-color: #32425c;
 }
@@ -221,29 +266,43 @@ h2{
 .bottom-footer {
   background-color: #293449;
 }
+
 footer {
   font-size: 18px;
   color: #ffffff;
 }
+
 .footer-navigation a:hover,
 .footer-navigation a:focus {
   border-bottom: 2px solid #fff;
+}
+
+.footer-navigation a:active {
+  opacity: 0.5;
+  border: none;
 }
 
 .footer-navigation-bottom a,
 .footer-conection a {
   color: #ffd180;
 }
+
 .footer-navigation-bottom a:hover,
 .footer-navigation-bottom a:focus,
 .footer-conection a:hover,
-.footer-conection a:focus   {
+.footer-conection a:focus {
   border-bottom: 2px solid #ffd180;
 }
 
+.footer-navigation-bottom a:active,
+.footer-navigation-bottom a:active {
+  border: none;
+  opacity: 0.5;
+}
 
 
 /*main-catalog*/
+
 .sorting,
 aside,
 .navigation a {
@@ -255,17 +314,20 @@ aside,
 .navigation a {
   font-size: 13px;
 }
-h1 {
+
+.catalog-header {
   font-size: 30px;
   text-transform: uppercase;
   font-weight: normal;
   background-color: #f2f6f8;
 }
+
 aside h3 {
   font-size: 13px;
   font-weight: 400;
   background-color: #f2f6f8;
 }
+
 aside legend,
 .pricefilter {
   font-size: 17px;
@@ -274,9 +336,11 @@ aside legend,
 .manufacturers li {
   font-size: 15px;
 }
+
 .sorting {
   font-size: 13px;
 }
+
 .pages-navigation-list a {
   font-family: 'PT Sans', sans-serif;
   font-size: 13px;
@@ -284,6 +348,7 @@ aside legend,
   text-transform: uppercase;
   border: 2px solid #e5e5e5;
 }
+
 .pages-navigation-list a:hover,
 .pages-navigation-list a:focus {
   border: 2px solid #bdc6ca;
